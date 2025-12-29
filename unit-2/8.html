@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+        <style>
+            *{
+                font-family: Arial, sans-serif;
+            }
+            #main-title {
+                color: bisque;
+                text-align: center;
+            }
+            .intro {
+                font-size: 18px;
+                color: brown;
+            }
+            .content p{
+                background-color: turquoise;
+                padding: 5px;
+            }
+
+            h1,footer p, .intro {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-title">css Selectors</h1>
+        <p class="intro">css Selectors</p>
+        <div class="content">
+            <P> This paragraph is inside a div</P>
+            <span> not affected by the descendant selector.</span>
+        </div>
+        <footer>
+            <p> This is the footer text.</p>
+        </footer>
+    </body>
+</html>

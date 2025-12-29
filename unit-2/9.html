@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 10px;
+            background: lightgray;
+        }
+
+        header, footer {
+            background: rgba(223, 97, 183, 0.783);
+            color: rgb(111, 201, 219);
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                background: silver;
+            }
+
+            main {
+                display: flex;
+                gap: 10px;
+            }
+
+            section {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                background: rgb(173, 230, 200);
+            }
+
+            main {
+                max-width: 900px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>My Responsive Page</h2>
+    </header>
+
+    <main>
+        <section>
+            <p>This is a mobile-first design</p>
+        </section>
+
+        <section>
+            <p> resize the window to see layout cange!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> created by me</p>
+    </footer>
+</body>
+</html>
